@@ -38,6 +38,7 @@ namespace Lo_Fi_Radio
             BgPic2.Location = new Point(0, 0);
             Status_Label.Visible = false;
             Status_Label.Text = "Подключение к трансляции.";
+            Status_Label.Location = new Point(Play_Pause_Button.Location.X - Status_Label.Width / 2, Play_Pause_Button.Location.Y - Status_Label.Height - 10);
             Status_Label.Visible = true;
             //this.Visible = true;
             Anim_Timer.Start();
@@ -50,7 +51,7 @@ namespace Lo_Fi_Radio
             this.webBrowser1.DocumentText = string.Format(html, txtUrl.Split('=')[1]);
             //adding dropmenu items
             menu.Items.Add("Подключение", null, null);
-            menu.Items.Add("Продолжить/Пауза", null, new EventHandler(MenuItemPlayPause_Click));
+            //menu.Items.Add("Продолжить/Пауза", null, new EventHandler(MenuItemPlayPause_Click));
             menu.Items.Add("Свернуть/Развернуть", null, new EventHandler(MenuItemShowHide_Click));
             menu.Items.Add("Закрыть", null, new EventHandler(MenuItemClose_Click));
             TaskBarIcon.ContextMenuStrip = menu;
@@ -156,14 +157,15 @@ namespace Lo_Fi_Radio
             menu.Items.RemoveAt(0);
             menu.Items.RemoveAt(0);
             menu.Items.RemoveAt(0);
-            menu.Items.RemoveAt(0);
+           //menu.Items.RemoveAt(0);
 
             menu.Items.Add("Подключено", null, null);
-            menu.Items.Add("Продолжить/Пауза", null, new EventHandler(MenuItemPlayPause_Click));
+            //menu.Items.Add("Продолжить/Пауза", null, new EventHandler(MenuItemPlayPause_Click));
             menu.Items.Add("Свернуть/Развернуть", null, new EventHandler(MenuItemShowHide_Click));
             menu.Items.Add("Закрыть", null, new EventHandler(MenuItemClose_Click));
             Status_Label.Text = "Подключение установлено";
-            Status_Label.Visible = true;
+            Status_Label.Location = new Point(Play_Pause_Button.Location.X - Status_Label.Width / 2, Play_Pause_Button.Location.Y - Status_Label.Height - 10);
+            //Status_Label.Visible = true;
         }
     }
 }

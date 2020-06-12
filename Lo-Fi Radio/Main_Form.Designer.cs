@@ -72,7 +72,7 @@
             // Play_Pause_Button
             // 
             this.Play_Pause_Button.Image = global::Lo_Fi_Radio.Properties.Resources.play;
-            this.Play_Pause_Button.Location = new System.Drawing.Point(448, 428);
+            this.Play_Pause_Button.Location = new System.Drawing.Point(437, 428);
             this.Play_Pause_Button.Name = "Play_Pause_Button";
             this.Play_Pause_Button.Size = new System.Drawing.Size(102, 97);
             this.Play_Pause_Button.TabIndex = 3;
@@ -103,7 +103,7 @@
             this.Status_Label.BackColor = System.Drawing.Color.Transparent;
             this.Status_Label.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Status_Label.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Status_Label.Location = new System.Drawing.Point(457, 401);
+            this.Status_Label.Location = new System.Drawing.Point(448, 401);
             this.Status_Label.Name = "Status_Label";
             this.Status_Label.Size = new System.Drawing.Size(82, 24);
             this.Status_Label.TabIndex = 4;
